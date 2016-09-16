@@ -94,6 +94,7 @@ fi
 speak "Running stack"
 cd "$WORK_DIR"
 stack setup
+stack clean
 stack build --fast --copy-bins
 
 # Set context environment variables.
